@@ -1,6 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #222;
+  background-color: #171a29; /* Darker background for better contrast */
   color: #ddd;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,100" fill="#171a29" opacity="0.1"/></svg>'); 
+  background-image: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,100" fill="#007bff" opacity="0.05"/></svg>'); 
   background-size: 10px 10px;
 }
 
@@ -24,8 +24,6 @@ body {
 }
 
 header.header {
-  background-color: #171a29;
-  padding: 20px 0;
   text-align: center;
   color: #fff;
   text-shadow: 0 0 5px #007bff; /* Glowing text effect */
@@ -65,7 +63,7 @@ nav.navigation a {
 }
 
 nav.navigation a:hover {
-  color: #fff;
+  color: #007bff; /* Blue hover color */
 }
 
 main {

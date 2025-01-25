@@ -71,26 +71,17 @@ nav.navigation a:hover {
 
 main {
   padding-bottom: 100px;
-  opacity: 0; /* Initially hide main content */
-  transform: translateY(50px); /* Initial offset for animation */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Added transition for smoother animation */
-}
-
-main.visible {
-  opacity: 1;
-  transform: translateY(0);
+  /* Removed opacity and transform for main element */
 }
 
 section {
   margin-bottom: 40px;
-  opacity: 0; 
-  transform: translateY(50px); 
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Added transition for smoother animation */
+  transform: translateY(50px); /* Keep initial offset for animation */
+  transition: transform 0.5s ease-in-out; /* Removed opacity transition */
 }
 
 section.active {
   transform: translateY(0);
-  opacity: 1;
 }
 
 section h2 {

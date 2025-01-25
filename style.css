@@ -7,6 +7,16 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
+.background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,100" fill="#171a29" opacity="0.1"/></svg>'); 
+  background-size: 10px 10px;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -18,6 +28,7 @@ header.header {
   padding: 20px 0;
   text-align: center;
   color: #fff;
+  text-shadow: 0 0 5px #007bff; /* Glowing text effect */
 }
 
 header.header h1 {
@@ -58,4 +69,26 @@ nav.navigation a:hover {
 }
 
 main {
-  padding-bottom: 100px; /*
+  padding-bottom: 100px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  color: #007bff;
+  text-shadow: 0 0 5px #007bff; /* Glowing text effect */
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+footer.footer {
+  background-color: #171a29;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}

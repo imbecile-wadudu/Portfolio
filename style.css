@@ -1,71 +1,61 @@
-/* General Styles */
 body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #222;
+  color: #ddd;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  background: rgba(30, 30, 30, 0.9);
-  background-image: linear-gradient(to bottom right, rgba(30, 30, 60, 0.6), rgba(10, 10, 40, 0.9)), url('patterns.png');
-  background-size: cover;
-  background-attachment: fixed;
-  overflow-x: hidden;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
-/* Main Container */
 .container {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header.header {
+  background-color: #171a29;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+header.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header.header p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+nav.navigation {
+  background-color: #171a29;
+  padding: 10px 0;
+}
+
+nav.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-/* Headings */
-h1 {
-  font-size: 3em;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
-  animation: glow 1.5s infinite alternate;
+nav.navigation li {
+  display: inline-block;
+  margin: 0 20px;
 }
 
-h2 {
-  font-size: 2em;
-  margin-top: 20px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 10px;
-}
-
-/* Paragraphs */
-p {
-  line-height: 1.6;
-  font-size: 1.1em;
-}
-
-/* Links */
-a {
-  color: #00eaff;
+nav.navigation a {
+  color: #ddd;
   text-decoration: none;
+  font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+nav.navigation a:hover {
+  color: #fff;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 10px;
-  font-size: 0.9em;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* Glow Animation */
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
-  }
-  to {
-    text-shadow: 0 0 20px rgba(0, 255, 255, 1);
-  }
-}
+main {
+  padding-bottom: 100px; /*

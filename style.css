@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #222; /* Simple dark background */
+  background-color: #222; /* Fallback dark background */
   color: #fff;
   line-height: 1.6;
 }
@@ -33,11 +33,11 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(34, 34, 34, 0.85); /* Dark grey translucent */
-  background-image: radial-gradient(circle, #555 1px, transparent 1px),
-                    radial-gradient(circle, #555 1px, transparent 1px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
+  background: rgba(20, 20, 50, 0.9); /* Dark grey with slight blue tint and transparency */
+  background-image: 
+    radial-gradient(circle, rgba(0, 0, 255, 0.05) 1%, transparent 1%),
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1%, transparent 1%);
+  background-size: 80px 80px, 120px 120px; /* Subtle patterns */
   z-index: -1;
 }
 
@@ -103,6 +103,9 @@ footer {
   background-color: #444; /* Darker grey footer */
   color: #bbb;
   font-size: 0.9rem;
+}
+
+footer p {
   font-style: italic;
 }
 

@@ -1,7 +1,6 @@
 const animatedText = document.getElementById('animated-text');
 const kendrickQuote = document.getElementById('kendrick-quote');
 const sections = document.querySelectorAll('section');
-const mainContent = document.querySelector('main');
 
 // Header text animation
 const textArray = ['Hello!', 'Welcome!', 'Greetings!', 'Hi there!'];
@@ -15,14 +14,10 @@ function changeText() {
 setInterval(changeText, 1000);
 
 // Header zoom-out animation
+animatedText.style.transform = 'scale(1.2)';
 setTimeout(() => {
   animatedText.style.transform = 'scale(1)';
 }, 500);
-
-// Show main content after header animation
-setTimeout(() => {
-  mainContent.classList.add('visible');
-}, 1000); // Delay to match header animation
 
 // Section animations on scroll
 window.addEventListener('scroll', () => {

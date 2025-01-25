@@ -1,5 +1,4 @@
 const animatedText = document.getElementById('animated-text');
-const kendrickQuote = document.getElementById('kendrick-quote');
 const sections = document.querySelectorAll('section');
 
 // Header text animation

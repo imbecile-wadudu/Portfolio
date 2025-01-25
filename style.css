@@ -12,17 +12,17 @@ body {
   background: #222; /* Fallback background */
 }
 
-/* Background with translucent dark grey and blue patterns */
+/* Updated Background */
 .background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(25, 25, 50, 0.8); /* Translucent dark grey with blue tint */
-  backdrop-filter: blur(10px); /* Blur effect */
+  background: rgba(25, 25, 50, 0.8); /* Translucent dark grey with blue hue */
+  backdrop-filter: blur(8px); /* Blur effect */
   z-index: -1;
-  background-image: radial-gradient(circle, rgba(30, 30, 60, 0.9) 0%, rgba(15, 15, 35, 0.7) 100%);
+  background-image: radial-gradient(circle, rgba(30, 30, 60, 0.9) 10%, rgba(15, 15, 35, 0.7) 90%);
   background-size: cover;
 }
 
@@ -57,53 +57,4 @@ body {
     opacity: 1;
     transform: scale(1);
   }
-}
-
-/* Content Section */
-.content {
-  padding: 50px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  background: rgba(15, 15, 40, 0.8); /* Translucent box */
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Headers with neon effect */
-.neon-header {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f; /* Blue glow */
-}
-
-/* Paragraph and link styles */
-.info {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #ddd; /* Light grey for readability */
-}
-
-.info a {
-  color: #00f;
-  font-weight: bold;
-}
-
-.info a:hover {
-  color: #fff;
-  text-shadow: 0 0 10px #00f;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(20, 20, 50, 0.9);
-  color: #bbb;
-  font-size: 0.9rem;
-}
-
-footer p {
-  font-style: italic;
 }

@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #111; /* Black background */
+  background-color: #333; /* Dark grey background */
   color: #fff;
   line-height: 1.6;
 }
@@ -26,14 +26,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Geometric Background */
+/* Simplified Background */
 .background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #111 25%, #e50914 25%, #e50914 50%, #111 50%, #111 75%, #e50914 75%, #e50914);
+  background: linear-gradient(135deg, #222 25%, #444 25%, #444 50%, #222 50%, #222 75%, #444 75%, #444);
   background-size: 40px 40px;
   z-index: -1;
 }
@@ -52,6 +52,7 @@ a:hover {
   opacity: 0;
   transform: scale(0);
   animation: netflixIntro 2s ease-out forwards;
+  text-shadow: 0 0 15px #e50914, 0 0 30px #e50914, 0 0 45px #e50914; /* Glow effect */
 }
 
 /* Netflix Intro Animation */
@@ -90,12 +91,13 @@ a:hover {
   font-size: 1rem;
   margin-bottom: 15px;
   color: #ddd; /* Light grey for readability */
+  text-shadow: 0 0 5px #fff; /* Light text shadow to make text stand out */
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #111;
+  background-color: #222; /* Dark background for footer */
   color: #bbb;
   font-size: 0.9rem;
 }

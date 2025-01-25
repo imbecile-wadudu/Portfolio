@@ -1,10 +1,10 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #171a29; /* Darker background for better contrast */
+  background-color: #171a29;
   color: #ddd;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-x: hidden;
 }
 
 .background-pattern {
@@ -13,7 +13,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,100" fill="#007bff" opacity="0.05"/></svg>'); 
+  background-image: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,100" fill="#007bff" opacity="0.05"/></svg>');
   background-size: 10px 10px;
 }
 
@@ -26,17 +26,16 @@ body {
 header.header {
   text-align: center;
   color: #fff;
-  text-shadow: 0 0 5px #007bff; /* Glowing text effect */
+  text-shadow: 0 0 5px #007bff;
 }
 
 header.header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 3em; /* Increased font size */
+  margin-bottom: 15px; /* Reduced gap between h1 and p */
 }
 
 header.header p {
-  font-size: 1.2em;
-  font-style: italic;
+  font-size: 1.3em; /* Increased font size */
 }
 
 nav.navigation {
@@ -53,7 +52,7 @@ nav.navigation ul {
 
 nav.navigation li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 15px; /* Reduced gap between nav items */
 }
 
 nav.navigation a {
@@ -63,7 +62,7 @@ nav.navigation a {
 }
 
 nav.navigation a:hover {
-  color: #007bff; /* Blue hover color */
+  color: #007bff;
 }
 
 main {
@@ -71,12 +70,12 @@ main {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 40px; /* Reduced gap between sections */
 }
 
 section h2 {
   color: #007bff;
-  text-shadow: 0 0 5px #007bff; /* Glowing text effect */
+  text-shadow: 0 0 5px #007bff;
 }
 
 .skills-list {
